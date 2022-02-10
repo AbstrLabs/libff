@@ -9,7 +9,7 @@ endif()
 
 set(
   CURVE
-  "BN128"
+  "MCL_BN128"
   CACHE
   STRING
   "Default curve: one of ALT_BN128, BN128, EDWARDS, MNT4, MNT6"
@@ -229,4 +229,7 @@ if ("${IS_LIBFF_PARENT}")
 
   add_subdirectory(depends)
 endif()
+
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/depends/mcl")
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/depends/mcl/include")
 add_subdirectory(libff)

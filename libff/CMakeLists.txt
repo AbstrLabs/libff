@@ -24,6 +24,12 @@ add_library(
   ff
   STATIC
 
+  algebra/curves/mcl_bn128/mcl_bn128_g1.cpp
+  algebra/curves/mcl_bn128/mcl_bn128_g2.cpp
+  algebra/curves/mcl_bn128/mcl_bn128_init.cpp
+  algebra/curves/mcl_bn128/mcl_bn128_pairing.cpp
+  algebra/curves/mcl_bn128/mcl_bn128_pp.cpp
+  algebra/curves/mcl_bn128/mcl_bn128_gt.cpp
   algebra/curves/alt_bn128/alt_bn128_g1.cpp
   algebra/curves/alt_bn128/alt_bn128_g2.cpp
   algebra/curves/alt_bn128/alt_bn128_init.cpp
