@@ -34,7 +34,7 @@ public:
 
     static mcl_bn128_GT one();
 
-    void print() { std::cout << this->elem << "\n"; };
+    void print() const { std::cout << this->elem << "\n"; };
 
     friend std::ostream& operator<<(std::ostream &out, const mcl_bn128_GT &g);
     friend std::istream& operator>>(std::istream &in, mcl_bn128_GT &g);
