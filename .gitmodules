@@ -6,4 +6,4 @@
 	url = https://github.com/herumi/xbyak.git
 [submodule "depends/mcl"]
 	path = depends/mcl
-	url = https://github.com/herumi/mcl.git
+	url = git@github.com:AbstrLabs/mcl.git
