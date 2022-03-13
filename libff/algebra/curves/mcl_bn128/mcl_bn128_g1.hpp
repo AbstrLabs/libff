@@ -44,6 +44,7 @@ public:
 
     void print() const;
     void print_coordinates() const;
+    void marshal(std::ostream& os) const;
 
     void to_affine_coordinates();
     void to_special();

@@ -81,6 +81,12 @@ void mcl_bn128_G1::print_coordinates() const
     }
 }
 
+void mcl_bn128_G1::marshal(std::ostream& os) const
+{
+    pt.x.marshal(os);
+    pt.y.marshal(os);
+}
+
 void mcl_bn128_G1::to_affine_coordinates()
 {
     pt.normalize();
